@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>50 Reasons Why I Love My Girlfriend</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#ff6b81;
+      --muted:#9aa6b2;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#071226 0%, #07142a 60%);color:#e6eef6}
+    .wrap{max-width:1100px;margin:36px auto;padding:24px}
+
+    header{display:flex;align-items:center;gap:18px;margin-bottom:18px}
+    .logo{width:68px;height:68px;display:grid;place-items:center;background:linear-gradient(180deg,var(--accent),#ff9aa8);border-radius:16px;box-shadow:0 6px 30px rgba(255,107,129,0.15);font-weight:700}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+    .actions{margin-left:auto;display:flex;gap:10px}
+    .btn{background:var(--glass);border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:10px;color:inherit;cursor:pointer;font-weight:600}
+    .btn.strong{background:linear-gradient(90deg,var(--accent),#ff9aa8);color:#081221;border:none}
+
+    .intro{margin:18px 0;padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.02)}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:580px){.grid{grid-template-columns:1fr}}
+
+    .card{background:linear-gradient(180deg,var(--card),#071226);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(3,6,12,0.6);display:flex;gap:12px;align-items:flex-start}
+    .num{min-width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.03);display:grid;place-items:center;font-weight:700;color:var(--accent);border:1px solid rgba(255,107,129,0.08)}
+    .text{font-size:15px;line-height:1.35;color:#dfeaf4}
+    .sub{display:block;color:var(--muted);font-size:13px;margin-top:6px}
+
+    footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* small flourish */
+    .heart{display:inline-block;margin-left:8px;font-weight:800;color:var(--accent)}
+
+    /* print styles */
+    @media print{
+      body{background:white;color:black}
+      .btn, header .actions{display:none}
+      .wrap{margin:0;padding:0}
+      .card{box-shadow:none;border:none;background:transparent}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">♥</div>
+      <div>
+        <h1>50 Reasons Why I Love My Girlfriend <span class="heart">❤</span></h1>
+        <p class="lead">A simple, printable page full of short, honest reasons you can share, customise, or print.</p>
+      </div>
+
+      <div class="actions">
+        <button class="btn" onclick="window.print()">Print</button>
+        <button class="btn" id="downloadBtn">Download</button>
+        <button class="btn strong" id="personalizeBtn">Personalize</button>
+      </div>
+    </header>
+
+    <div class="intro">Tip: Click "Personalize" to quickly replace words (like her name or small changes). This page is intentionally short and sweet so each reason reads well on cards or when printed.</div>
+
+    <main class="grid" id="reasons">
+      <!-- 50 cards inserted here -->
+      <!-- Keep the reasons brief so they fit well when printed -->
+
+      <div class="card"><div class="num">1</div><div class="text">You light up my worst days.<span class="sub">Your presence calms me.</span></div></div>
+      <div class="card"><div class="num">2</div><div class="text">You make me laugh until I cry.<span class="sub">Even small jokes mean a lot.</span></div></div>
+      <div class="card"><div class="num">3</div><div class="text">You believe in me when I doubt myself.<span class="sub">Your support keeps me going.</span></div></div>
+      <div class="card"><div class="num">4</div><div class="text">You’re patient with my flaws.<span class="sub">I can be myself around you.</span></div></div>
+      <div class="card"><div class="num">5</div><div class="text">You challenge me to grow.<span class="sub">You push me toward better versions of myself.</span></div></div>
+      <div class="card"><div class="num">6</div><div class="text">You listen deeply.<span class="sub">I feel heard and understood.</span></div></div>
+      <div class="card"><div class="num">7</div><div class="text">You have a beautiful heart.<span class="sub">Kindness shows in everything you do.</span></div></div>
+      <div class="card"><div class="num">8</div><div class="text">You celebrate my successes like they’re yours.<span class="sub">We win together.</span></div></div>
+      <div class="card"><div class="num">9</div><div class="text">You forgive my mistakes.<span class="sub">We move forward, not backward.</span></div></div>
+      <div class="card"><div class="num">10</div><div class="text">You smell comforting and familiar.<span class="sub">Little sensory memories matter.</span></div></div>
+
+      <div class="card"><div class="num">11</div><div class="text">You inspire me with your creativity.<span class="sub">Your ideas are magnetic.</span></div></div>
+      <div class="card"><div class="num">12</div><div class="text">You make our house feel like home.<span class="sub">Tiny rituals mean a lot.</span></div></div>
+      <div class="card"><div class="num">13</div><div class="text">You’re brave in the face of fear.<span class="sub">Your courage is contagious.</span></div></div>
+      <div class="card"><div class="num">14</div><div class="text">You take care of me when I’m sick.<span class="sub">Your tenderness heals.</span></div></div>
+      <div class="card"><div class="num">15</div><div class="text">You respect my boundaries.<span class="sub">That respect builds trust.</span></div></div>
+      <div class="card"><div class="num">16</div><div class="text">You share my weird hobbies without judgment.<span class="sub">We have fun together.</span></div></div>
+      <div class="card"><div class="num">17</div><div class="text">You remember small details about me.<span class="sub">It shows you care and pay attention.</span></div></div>
+      <div class="card"><div class="num">18</div><div class="text">You give the best hugs.<span class="sub">They feel like coming home.</span></div></div>
+      <div class="card"><div class="num">19</div><div class="text">You’re honest, even when it’s hard.<span class="sub">Honesty keeps us real.</span></div></div>
+      <div class="card"><div class="num">20</div><div class="text">You make ordinary moments special.<span class="sub">Everyday magic is real with you.</span></div></div>
+
+      <div class="card"><div class="num">21</div><div class="text">You support my friendships and family ties.<span class="sub">You welcome the important people in my life.</span></div></div>
+      <div class="card"><div class="num">22</div><div class="text">You encourage my dreams.<span class="sub">You want me to reach for the stars.</span></div></div>
+      <div class="card"><div class="num">23</div><div class="text">You have a contagious smile.<span class="sub">It brightens the whole room.</span></div></div>
+      <div class="card"><div class="num">24</div><div class="text">You’re thoughtful with surprises.<span class="sub">They’re small but meaningful.</span></div></div>
+      <div class="card"><div class="num">25</div><div class="text">You make me feel safe to be vulnerable.<span class="sub">That safety is rare.</span></div></div>
+      <div class="card"><div class="num">26</div><div class="text">You make delicious meals (or try to!).<span class="sub">Food tastes better together.</span></div></div>
+      <div class="card"><div class="num">27</div><div class="text">You forgive yourself and grow.<span class="sub">That humility is attractive.</span></div></div>
+      <div class="card"><div class="num">28</div><div class="text">You know how to cheer me up.<span class="sub">You have my personal pick-me-ups down.</span></div></div>
+      <div class="card"><div class="num">29</div><div class="text">You respect my opinions even when different.<span class="sub">We can disagree kindly.</span></div></div>
+      <div class="card"><div class="num">30</div><div class="text">You plan little adventures with me.<span class="sub">We make memories together.</span></div></div>
+
+      <div class="card"><div class="num">31</div><div class="text">You challenge me intellectually.<span class="sub">Good conversations matter.</span></div></div>
+      <div class="card"><div class="num">32</div><div class="text">You accept my family for who they are.<span class="sub">That generosity warms my heart.</span></div></div>
+      <div class="card"><div class="num">33</div><div class="text">You stay calm during chaos.<span class="sub">Your steadiness steadies me.</span></div></div>
+      <div class="card"><div class="num">34</div><div class="text">You love my imperfections.<span class="sub">You make me feel lovable.</span></div></div>
+      <div class="card"><div class="num">35</div><div class="text">You’re affectionate in private ways.<span class="sub">Small touches add up.</span></div></div>
+      <div class="card"><div class="num">36</div><div class="text">You help me laugh at myself.<span class="sub">We don’t take life too seriously.</span></div></div>
+      <div class="card"><div class="num">37</div><div class="text">You are endlessly curious about the world.<span class="sub">Your curiosity is inspiring.</span></div></div>
+      <div class="card"><div class="num">38</div><div class="text">You bring out the best parts of me.<span class="sub">You’re my mirror in the best way.</span></div></div>
+      <div class="card"><div class="num">39</div><div class="text">You make even tough conversations feel safe.<span class="sub">We can talk about anything.</span></div></div>
+      <div class="card"><div class="num">40</div><div class="text">You are my favorite person to do nothing with.<span class="sub">Presence beats plans.</span></div></div>
+
+      <div class="card"><div class="num">41</div><div class="text">You take pride in your achievements and mine.<span class="sub">We celebrate wins together.</span></div></div>
+      <div class="card"><div class="num">42</div><div class="text">You make me want to be a better partner.<span class="sub">You inspire improvement.</span></div></div>
+      <div class="card"><div class="num">43</div><div class="text">You give me space when I need it.<span class="sub">Independence strengthens us.</span></div></div>
+      <div class="card"><div class="num">44</div><div class="text">You keep secrets safe with me.<span class="sub">Trust matters most.</span></div></div>
+      <div class="card"><div class="num">45</div><div class="text">You make me proud to stand by you.<span class="sub">I admire you openly.</span></div></div>
+      <div class="card"><div class="num">46</div><div class="text">You are playful and fun.<span class="sub">You make life lighter.</span></div></div>
+      <div class="card"><div class="num">47</div><div class="text">You respect our shared values.<span class="sub">Values guide our path together.</span></div></div>
+      <div class="card"><div class="num">48</div><div class="text">You show up even when it’s inconvenient.<span class="sub">Reliability is priceless.</span></div></div>
+      <div class="card"><div class="num">49</div><div class="text">You make ordinary days feel like a gift.<span class="sub">Gratitude runs through us.</span></div></div>
+      <div class="card"><div class="num">50</div><div class="text">You love me — simply and consistently.<span class="sub">That’s everything.</span></div></div>
+
+    </main>
+
+    <footer>Made with care • Edit the reasons, change the order, or print this as a tiny booklet for a surprise.</footer>
+  </div>
+
+  <script>
+    // download as HTML file
+    document.getElementById('downloadBtn').addEventListener('click', ()=>{
+      const doc = '<!doctype html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([doc],{type:'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = '50-Reasons-I-Love-My-Girlfriend.html';
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    });
+
+    // quick personalize: replace PLACEHOLDER with prompt
+    document.getElementById('personalizeBtn').addEventListener('click', ()=>{
+      const name = prompt('Enter her name (leave empty to cancel):');
+      if(!name) return;
+      // simple replace in page text nodes (numbers and structure preserved)
+      const nodes = document.querySelectorAll('#reasons .text');
+      nodes.forEach(n=>{
+        n.innerHTML = n.innerHTML.replace(/my girlfriend|she|her/ig, name);
+      });
+    });
+  </script>
+</body>
+</html>
